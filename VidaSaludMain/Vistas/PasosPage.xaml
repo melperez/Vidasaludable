@@ -1,0 +1,90 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:eim="clr-namespace:Microsoft.Expression.Interactivity.Media;assembly=Microsoft.Expression.Interactions"
+    xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+    x:Class="VidaSaludMain.Vistas.PasosPage"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="btnAppBarBack" IconUri="/Assets/AppBar/back.png" Text="Back"/>
+            <shell:ApplicationBarIconButton x:Name="btnAppBarHome" IconUri="/Assets/AppBar/favs.png" Text="Home"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/Assets/SaludableMain1.png"/>
+        </Grid.Background>
+        <!--Pivot Control-->
+        <phone:Pivot Title="PASOS PARA COMENZAR " Background="{x:Null}" Foreground="#FF0A0404">
+            <!--Pivot item Paso 1-->
+            <phone:PivotItem x:Name="ItemPaso1" Header="Paso 1" Margin="10,0,14,28">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" Margin="26,19,0,0" TextWrapping="Wrap" Text="{Binding LocalizedResources.Paso1, Mode=OneWay, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Height="318" Width="399" Tag="Paso 1" FontSize="26.667"/>
+                </Grid>
+            </phone:PivotItem>
+            <!--Pivot item Paso 2-->
+            <phone:PivotItem x:Name="ItemPaso2" Header="Paso 2">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding LocalizedResources.Paso2, Mode=OneWay, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" FontSize="26.667" Margin="19,0,0,0" Width="417"/>
+                    <Button x:Name="btnMetas" Content="Ver Metas Personales" HorizontalAlignment="Left" Margin="84,451,0,0" VerticalAlignment="Top" BorderBrush="Black" Foreground="White" Background="#FF110B0B" Width="286">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <ec:NavigateToPageAction TargetPage="/Vistas/ExtraInfoPage.xaml"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Button>
+                </Grid>
+            </phone:PivotItem>
+            <!--Pivot item Paso 3-->
+            <phone:PivotItem x:Name="ItemPaso3" Header="Paso 3" Margin="12,28,12,153">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="20,0,0,0" Width="417" FontSize="26.667">
+						<Run Text="3. Recluta un "/>
+						<Run FontWeight="Bold" Text="Compañero de Salud"/>
+						<Run Text=", es más divertido y placentero realizar las actividades en compañía que solo. Tu compañero puede ser tu esposo(a), un hijo o hija,  un amigo o cualquier persona que te pueda ofrecer estímulo y apoyo diariamente al encarar tus desafíos de salud."/>
+                    </TextBlock>
+                    <Button x:Name="btnReclutar" Content="Reclutar Compañero" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,446,0,-155" BorderBrush="#FF1B1B1B" Foreground="White" Background="#FF0A0606">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <ec:NavigateToPageAction TargetPage="/Vistas/RegistroCompañero.xaml"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Button>
+                </Grid>
+            </phone:PivotItem>
+            <!--Pivot item Paso 4-->
+            <phone:PivotItem x:Name="ItemPaso4" Header="Paso 4" Margin="12,57,12,-29">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding LocalizedResources.Paso4, Mode=OneWay, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" FontSize="26.667" Width="392" Margin="27,4,0,0" Height="197"/>
+                </Grid>
+            </phone:PivotItem>
+            <!--Pivot item Paso 5-->
+            <phone:PivotItem x:Name="ItemPaso5" Header="Paso 5" Margin="12,77,12,-49">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding LocalizedResources.Paso5, Mode=OneWay, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" FontSize="26.667" Margin="23,0,0,0" Width="407"/>
+                </Grid>
+            </phone:PivotItem>
+            <!--Pivot item Paso 6-->
+            <phone:PivotItem x:Name="ItemPaso6" Header="Paso 6" Margin="12,46,12,-18">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding LocalizedResources.Paso6, Mode=OneWay, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" FontSize="26.667" Margin="22,-1,0,0" Width="414"/>
+                    <Button x:Name="btnComenzar" Content="Comenzar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,395,0,0" BorderBrush="#FF1B1B1B" Background="#FF060606" Width="211" Tag="Comenzar" IsEnabled="False" Click="btnComenzar_Click"/>
+                </Grid>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+
+</phone:PhoneApplicationPage>

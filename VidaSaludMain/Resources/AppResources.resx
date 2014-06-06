@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>en-US</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>my application</value>
+  </data>
+  <data name="SampleProperty" xml:space="preserve">
+    <value>Sample Runtime Property Value</value>
+  </data>
+  <data name="Intro" xml:space="preserve">
+    <value>La salud es la ventaja más valiosa que cualquier persona puede tener. Desgraciadamente, mucha 
+gente no invierte mucho en su salud hasta que desarrolla un problema de salud serio, tal como un 
+ataque cardiaco o cáncer. 
+Si usted adopta ahora una forma de vida sana, puede reducir el riesgo de serios problemas de 
+salud, aumentar su nivel de energía, sentirse mejor y vivir muchos años más. 
+Esta guía personal de la buena salud será uno de sus compañeros en su plan hacia la buena salud. 
+Cada semana se introducirá un aspecto diverso de la buena salud. Enfoque su atención en ese 
+tema durante esa semana.</value>
+    <comment>Introduccion</comment>
+  </data>
+  <data name="Uso" xml:space="preserve">
+    <value>Con esta aplicación   usted   aprenderá en ocho semas  cómo: 
+  •   Identificar y desarrollar un estilo de vida sana 
+  •   Llegar a ser más activo físicamente 
+  •   Escoger alimentos bajos en grasas saturadas y colesterol 
+  •   Proteger su salud consumiendo alimentos ricos en fibra 
+  •   Lograr y mantener un peso sano 
+  •   Reconocer y evitar las dependencias 
+  •   Enfrentar más efectivamente el estrés 
+  •   Enfocar su atención en la prevención</value>
+    <comment>Uso Aplicacion</comment>
+  </data>
+  <data name="Paso1" xml:space="preserve">
+    <value>1.  Esta aplicación está diseñada para que pueda realizar tu proyecto en modalidad de auto estudio, ¿Qué quiere decir esto?, que debe estudiar el material del tema de cada semana y hacer planes de acción con “tu compañero de salud”.</value>
+    <comment>Paso1</comment>
+  </data>
+  <data name="Paso2" xml:space="preserve">
+    <value>2. Selecciona dos metas personales de Buena Salud. Más adelante encontraras una lista de metas personales, que si pones en práctica durante las próximas ocho semanas, mejoraran tu nivel de salud actual, te verás tentado a elegir una actividad que ya estas realizando, pero recuerda que este plan esta diseñado para llevar a cabo nuevas mejoras en tu salud.</value>
+    <comment>Paso2</comment>
+  </data>
+  <data name="Paso3" xml:space="preserve">
+    <value>3. Recluta un “Compañero de Salud”, es más divertido y placentero realizar las actividades en compañía que solo. Tu compañero puede ser tu esposo(a), un hijo o hija,  un amigo o cualquier persona que te pueda ofrecer estímulo y apoyo diariamente al encarar tus desafíos de salud.</value>
+    <comment>Paso3</comment>
+  </data>
+  <data name="Paso4" xml:space="preserve">
+    <value>4. Comprométete a estudiar el tema de la semana y discute las estrategias con tu compañero de salud para lograr las metas propuestas.</value>
+    <comment>Paso4</comment>
+  </data>
+  <data name="Paso5" xml:space="preserve">
+    <value>5. Hacer las tareas asignadas, cada semana lee el material de autoestudio, si hay hojas de trabajo llénelas, de esta forma aprenderás a manejar tu salud.</value>
+    <comment>Paso5</comment>
+  </data>
+  <data name="Paso6" xml:space="preserve">
+    <value>6. Registra tu progreso diariamente. Lleva tu registro personal usando el sistema de puntos de salud que usted acumula por alcanzar sus metas cada día.</value>
+    <comment>Paso6</comment>
+  </data>
+  <data name="Meta1" xml:space="preserve">
+    <value>Perder peso si tiene sobrepeso 
+(a un paso saludable, de media 
+libra a una libra por semana.)</value>
+    <comment>Meta 1</comment>
+  </data>
+  <data name="Meta10" xml:space="preserve">
+    <value>Alimentar tu salud espiritual. Pase 
+de 20 a 30 minutos cada día 
+desarrollando su espiritualidad: 
+estudiando, leyendo, contemplando, 
+adorando, orando, o ayudando a alguien 
+necesitado</value>
+    <comment>Meta10</comment>
+  </data>
+  <data name="Meta11" xml:space="preserve">
+    <value>No tomar alcohol</value>
+    <comment>Meta 11</comment>
+  </data>
+  <data name="Meta12" xml:space="preserve">
+    <value>No comer pasabocas o comida chatarra</value>
+    <comment>Meta 12</comment>
+  </data>
+  <data name="Meta13" xml:space="preserve">
+    <value>No comer después de la cena o tres
+horas antes de acostarse</value>
+    <comment>Meta 13</comment>
+  </data>
+  <data name="Meta2" xml:space="preserve">
+    <value>Dejar de fumar si es fumador.</value>
+    <comment>Meta 2</comment>
+  </data>
+  <data name="Meta3" xml:space="preserve">
+    <value>Cepillar los dientes y pasar el
+hilo dental diariamente</value>
+    <comment>Meta 3</comment>
+  </data>
+  <data name="Meta4" xml:space="preserve">
+    <value>Comer principalmente granos 
+integrales (arroz, pan integral, 
+cereales, avena).</value>
+    <comment>Meta 4</comment>
+  </data>
+  <data name="Meta5" xml:space="preserve">
+    <value>Tomar diariamente de seis a 
+ocho vasos de agua.</value>
+    <comment>Meta 5</comment>
+  </data>
+  <data name="Meta6" xml:space="preserve">
+    <value>Desayunar diariamente</value>
+    <comment>Meta 6</comment>
+  </data>
+  <data name="Meta7" xml:space="preserve">
+    <value>Practicar una técnica para reducir 
+el estrés, durante por lo menos 
+15 a 20 minutos diarios</value>
+    <comment>Meta 7</comment>
+  </data>
+  <data name="Meta8" xml:space="preserve">
+    <value>Ver televisión no más de una hora 
+en día de semana y 2 horas en fines 
+de semana, esto con el fin de tener 
+más tiempo para la actividad física, 
+el descanso adecuado, etc.</value>
+    <comment>Meta 8</comment>
+  </data>
+  <data name="Meta9" xml:space="preserve">
+    <value>Fomentar una buena red de apoyo, 
+dedicar por lo menos de 15 a 20 
+minutos de tiempo de calidad cada 
+día con un familiar o amigo.</value>
+    <comment>Meta 9</comment>
+  </data>
+</root>
